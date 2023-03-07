@@ -7,6 +7,9 @@ public class Circulo_JAZ extends FiguraGeometrica_JAZ {
 	public Circulo(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio < 0){
+		this.radio = -radio;
+		}
 	}
 
 	@Override
