@@ -8,31 +8,43 @@ public class Rectangulo_JAZ extends FiguraGeometrica_JAZ {
 	
 	public Rectangulo(String tipoFigura, double lG, double lP) {
 		/**
-		*se le pasan 3 parametros al constructor,un struing y dos double
+		*@param String tipoFigura
+		*@double lG
+		*@double 1P
 		*/
 		super(tipoFigura);
 		l1 = lG;
 		l2 = lP;
+		/**
+		*@return void
+		*/
 	}
 
 	@Override
 	public double area() {
+		/**
+		*@param double area
+		*/
 	/**
 	*este metodo calcula el area
 	*/
-		return l1 * l2;/**
-		*devuelve el resultado de l1 * l2 que sera un resultado de tipo double
+		return l1 * l2;
+		/**
+		*@return devuelve el resultado de l1 * l2 que sera un resultado de tipo double
 		*/
 	}
 	
 	@Override
 	public double perimetro() {
+			/**
+		*@param double perimetro
+		*/
 	/**
 	*este metodo calcula el perimetro
 	*/
 		return (2 * l1) + (2 * l2);
 		/**
-		*devuelve el resultado de 2 * l1 + 2*l2 que sera un double
+		*@return devuelve el resultado de 2 * l1 + 2*l2 que sera un double
 		*/
 	}
 
